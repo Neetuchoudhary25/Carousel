@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+      }
+
+      .container{
+       height: 40rem;
+        width:  60vw;
+        box-shadow: 0 10px 20px rgb(60, 60, 60);
+        background-image: url("https://images.pexels.com/photos/372166/pexels-photo-372166.jpeg?cs=srgb&dl=pexels-pixabay-372166.jpg&fm=jpg");
+       background-size: cover;
+       animation: image 20s linear infinite;
+}
+
+@keyframes image {
+        0% {
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEv5v6hm3f9O2ldK9DaxvFGs5fzY8hgLMDzw&s");
+        }
+        20% {
+          background-image: url("https://images.pexels.com/photos/10528234/pexels-photo-10528234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        }
+        40% {
+          background-image: url("https://images.pexels.com/photos/372166/pexels-photo-372166.jpeg?cs=srgb&dl=pexels-pixabay-372166.jpg&fm=jpg");
+        }
+        60% {
+          background-image: url("https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        }
+        80% {
+          background-image: url("https://images.pexels.com/photos/2131623/pexels-photo-2131623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        }
+        100% {
+          background-image: url("https://images.pexels.com/photos/1311445/pexels-photo-1311445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        }
+      }
+</style>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>
